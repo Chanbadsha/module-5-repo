@@ -4,7 +4,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-
+    scroll-behavior: smooth;
 }
 
 .hero_section {
@@ -15,12 +15,36 @@
     background-repeat: no-repeat;
     color: white;
     background-position: center center;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     /* align-items: start; */
 
 }
 
+nav {
+    position: fixed;
+    background: white;
+    width: 100%;
+    /* top: 10%;
+    left: 50%; */
+    line-height: 2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav ul li {
+    list-style: none;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+}
 
 .hero_section_text {
     display: flex;
@@ -29,6 +53,7 @@
     flex-direction: column;
     max-width: 50%;
     padding-top: 7%;
+    margin: auto;
 }
 
 .hero_section_text .subtitle {
@@ -86,7 +111,7 @@
     margin-bottom: 20px;
 }
 
-#card_section {
+#menu {
     height: 100vh;
     width: 100vw;
     background: #dddd;
